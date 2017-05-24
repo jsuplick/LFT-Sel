@@ -57,5 +57,6 @@
     <orderEntry type="library" name="Maven: com.hp.lft:reportbuilder-standalone:14.0.0" level="project" />
     <orderEntry type="library" name="Maven: com.hp.lft:unittesting:14.0.0" level="project" />
     <orderEntry type="library" name="Maven: com.hp.lft:verifications:14.0.0" level="project" />
+    <orderEntry type="library" name="Maven: com.hp.lft:selenium:14.0.0" level="project" />
   </component>
 </module>

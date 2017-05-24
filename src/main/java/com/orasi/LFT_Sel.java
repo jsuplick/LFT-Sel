@@ -8,8 +8,11 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-import com.hp.leanft.selenium.By;
-import com.hp.leanft.selenium.ByEach;
+import com.hp.lft.sdk.*;
+import com.hp.lft.report.*;
+import com.hpe.leanft.selenium.*;
+import com.hpe.leanft.selenium.By;
+import com.hpe.leanft.selenium.ByEach;
 
 import java.util.HashMap;
 import java.util.regex.Pattern;
@@ -18,7 +21,6 @@ import java.util.concurrent.TimeUnit;
 import java.net.URI;
 
 import org.openqa.selenium.*;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
