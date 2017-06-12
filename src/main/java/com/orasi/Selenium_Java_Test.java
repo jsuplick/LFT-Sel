@@ -14,9 +14,9 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class Selenium_Java_Test {
 
-//    public static void main(String args[]) {
-//        Selenium_Java_Test SJT = new Selenium_Java_Test();
-//    }
+    public static void main(String args[]) {
+        Selenium_Java_Test SJT = new Selenium_Java_Test();
+    }
 
     public Selenium_Java_Test() {
     }
