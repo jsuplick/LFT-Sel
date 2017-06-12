@@ -8,10 +8,10 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-import com.hp.lft.sdk.*;
-import com.hp.lft.report.*;
-import com.hpe.leanft.selenium.*;
-import com.hpe.leanft.selenium.By;
+//import com.hp.lft.sdk.*;
+//import com.hp.lft.report.*;
+//import com.hpe.leanft.selenium.*;
+//import com.hpe.leanft.selenium.By;
 import com.hpe.leanft.selenium.ByEach;
 
 import java.util.HashMap;
