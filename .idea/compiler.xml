@@ -7,10 +7,12 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="LFT-Sel" />
+        <module name="Selenium-Java" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="LFT-Sel" target="1.7" />
+      <module name="Selenium-Java" target="1.7" />
     </bytecodeTargetLevel>
   </component>
 </project>

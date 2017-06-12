@@ -1,3 +1,3 @@
 Manifest-Version: 1.0
-Main-Class: com.orasi.Main
+Main-Class: com.orasi.Selenium_Java_Test
 
