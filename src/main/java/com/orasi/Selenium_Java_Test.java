@@ -16,6 +16,13 @@ public class Selenium_Java_Test {
 
     public static void main(String args[]) {
         Selenium_Java_Test SJT = new Selenium_Java_Test();
+        try {
+            SJT.setUpBeforeClass();
+            SJT.test();
+            SJT.tearDownAfterClass();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
     public Selenium_Java_Test() {
@@ -26,14 +33,14 @@ public class Selenium_Java_Test {
     public static String baseURL = "http://advantageonlineshopping.com/#/";
 
     @BeforeClass
-    public static void setUpBeforeClass() throws Exception {
+    public void setUpBeforeClass() throws Exception {
         //Get WebDriver going
         System.setProperty("webdriver.chrome.driver", "C:\\Users\\Orasi_SA\\Desktop\\WebDriver\\chromedriver.exe");
         driver = new ChromeDriver();
     }
 
     @AfterClass
-    public static void tearDownAfterClass() throws Exception {
+    public void tearDownAfterClass() throws Exception {
         driver.quit();
     }
 //
