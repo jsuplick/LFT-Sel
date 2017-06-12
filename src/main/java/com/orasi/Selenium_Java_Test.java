@@ -18,23 +18,22 @@ public class Selenium_Java_Test {
 //        Selenium_Java_Test SJT = new Selenium_Java_Test();
 //    }
 
+    public Selenium_Java_Test() {
+    }
+
     public static WebDriver driver = null;
     public static WebDriverWait waitVar = null;
     public static String baseURL = "http://advantageonlineshopping.com/#/";
 
-    public Selenium_Java_Test() {
-      //Change this constructor to private if you supply your own public constructor
-    }
-
     @BeforeClass
-    public void setUpBeforeClass() throws Exception {
+    public static void setUpBeforeClass() throws Exception {
         //Get WebDriver going
         System.setProperty("webdriver.chrome.driver", "C:\\Users\\Orasi_SA\\Desktop\\WebDriver\\chromedriver.exe");
         driver = new ChromeDriver();
     }
 
     @AfterClass
-    public void tearDownAfterClass() throws Exception {
+    public static void tearDownAfterClass() throws Exception {
         driver.quit();
     }
 //
@@ -85,7 +84,6 @@ public class Selenium_Java_Test {
                 org.openqa.selenium.By.xpath("/html/body/header/nav/div/a/span[1]")
         )).get(0);
         element.click();
-
 
         driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
     }
