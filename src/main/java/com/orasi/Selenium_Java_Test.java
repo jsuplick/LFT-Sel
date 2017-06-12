@@ -27,26 +27,26 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.openqa.selenium.support.pagefactory.ByChained;
 
-public class LFT_Sel {
+public class Selenium_Java_Test {
 
     public static WebDriver driver = null;
     public static WebDriverWait waitVar = null;
 
     public static String baseURL = "http://advantageonlineshopping.com/#/";
 
-    public LFT_Sel() {
+    public Selenium_Java_Test() {
     //Change this constructor to private if you supply your own public constructor
     }
 
     @BeforeClass
     public static void setUpBeforeClass() throws Exception {
 
-        //Initialize the LeanFT SDK and the LeanFT Reporter
-        ModifiableSDKConfiguration config = new ModifiableSDKConfiguration();
-        config.setServerAddress(new URI("ws://localhost:5095"));
-        SDK.init(config);
-        ModifiableReportConfiguration rconfig = new ModifiableReportConfiguration();
-        Reporter.init (rconfig);
+//        //Initialize the LeanFT SDK and the LeanFT Reporter
+//        ModifiableSDKConfiguration config = new ModifiableSDKConfiguration();
+//        config.setServerAddress(new URI("ws://localhost:5095"));
+//        SDK.init(config);
+//        ModifiableReportConfiguration rconfig = new ModifiableReportConfiguration();
+//        Reporter.init (rconfig);
 
         //Get WebDriver going
         System.setProperty("webdriver.chrome.driver", "C:\\Users\\Orasi_SA\\Desktop\\WebDriver\\chromedriver.exe");
