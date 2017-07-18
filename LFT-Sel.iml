@@ -52,11 +52,13 @@
     <orderEntry type="library" name="Maven: io.netty:netty:3.5.7.Final" level="project" />
     <orderEntry type="library" name="Maven: org.seleniumhq.selenium:selenium-support:2.53.1" level="project" />
     <orderEntry type="library" name="Maven: org.seleniumhq.selenium:selenium-leg-rc:2.53.1" level="project" />
-    <orderEntry type="library" name="Maven: com.hp.lft:sdk-standalone:14.0.0" level="project" />
-    <orderEntry type="library" name="Maven: com.hp.lft:report:14.0.0" level="project" />
-    <orderEntry type="library" name="Maven: com.hp.lft:reportbuilder-standalone:14.0.0" level="project" />
-    <orderEntry type="library" name="Maven: com.hp.lft:unittesting:14.0.0" level="project" />
-    <orderEntry type="library" name="Maven: com.hp.lft:verifications:14.0.0" level="project" />
-    <orderEntry type="library" name="Maven: com.hp.lft:selenium:14.0.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: com.hp.lft:sdk-standalone:14.0.0" level="project" />
+    <orderEntry type="library" name="Maven: com.hp.lft:report:report:14.0.0" level="project" />
+    <orderEntry type="library" name="Maven: com.hp.lft:reportbuilder-standalone:reportbuilder-standalone:14.0.0" level="project" />
+    <orderEntry type="library" name="Maven: com.hp.lft:unittesting:unittesting:14.0.0" level="project" />
+    <orderEntry type="library" name="Maven: com.hp.lft:verifications:verifications:14.0.0" level="project" />
+    <orderEntry type="library" name="Maven: com.hp.lft:common:common:14.0.0" level="project" />
+    <orderEntry type="library" name="Maven: com.hpe.lft:selenium:selenium:14.0.0" level="project" />
+    <orderEntry type="library" name="Maven: com.hpe.lft:selenium-javadoc:selenium-javadoc:14.0.0" level="project" />
   </component>
 </module>
