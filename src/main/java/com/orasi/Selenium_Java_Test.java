@@ -1,73 +1,56 @@
 package com.orasi;
 
-import static org.junit.Assert.*;
-
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
-
-import com.hp.lft.sdk.*;
-import com.hp.lft.report.*;
-import com.hpe.leanft.selenium.*;
-import com.hpe.leanft.selenium.By;
 import com.hpe.leanft.selenium.ByEach;
-
-import java.util.HashMap;
-import java.util.regex.Pattern;
 import java.util.concurrent.TimeUnit;
-
-import java.net.URI;
-
-import org.openqa.selenium.*;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.openqa.selenium.support.pagefactory.ByChained;
 
-public class LFT_Sel {
+public class Selenium_Java_Test {
+
+    public static void main(String args[]) {
+        Selenium_Java_Test SJT = new Selenium_Java_Test();
+        try {
+            SJT.setUpBeforeClass();
+            SJT.test();
+            SJT.tearDownAfterClass();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    public Selenium_Java_Test() {
+    }
 
     public static WebDriver driver = null;
     public static WebDriverWait waitVar = null;
-
     public static String baseURL = "http://advantageonlineshopping.com/#/";
 
-    public LFT_Sel() {
-    //Change this constructor to private if you supply your own public constructor
-    }
-
     @BeforeClass
-    public static void setUpBeforeClass() throws Exception {
-
-        //Initialize the LeanFT SDK and the LeanFT Reporter
-        ModifiableSDKConfiguration config = new ModifiableSDKConfiguration();
-        config.setServerAddress(new URI("ws://localhost:5095"));
-        SDK.init(config);
-        ModifiableReportConfiguration rconfig = new ModifiableReportConfiguration();
-        Reporter.init (rconfig);
-
+    public void setUpBeforeClass() throws Exception {
         //Get WebDriver going
         System.setProperty("webdriver.chrome.driver", "C:\\Users\\Orasi_SA\\Desktop\\WebDriver\\chromedriver.exe");
         driver = new ChromeDriver();
-
     }
 
     @AfterClass
-    public static void tearDownAfterClass() throws Exception {
-
+    public void tearDownAfterClass() throws Exception {
         driver.quit();
     }
-
-    @Before
-    public void setUp() throws Exception {
-    }
-
-    @After
-    public void tearDown() throws Exception {
-
-    }
+//
+//    @Before
+//    public void setUp() throws Exception {
+//    }
+//
+//    @After
+//    public void tearDown() throws Exception {
+//    }
 
     @Test
     public void test() throws Exception {
@@ -109,7 +92,7 @@ public class LFT_Sel {
         )).get(0);
         element.click();
 
-
         driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
     }
+
 }
